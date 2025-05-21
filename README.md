@@ -1,7 +1,7 @@
 # Image-Captioning
 Combines a Vision Transformer (ViT) encoder for extracting image features with a DistilGPT2 decoder for generating captions.
 
-The model was trained on a subset of the [COCO Image Captioning Dataset](https://www.kaggle.com/datasets/nagasai524/mini-coco2014-dataset-for-image-captioning?select=Images). The dataset consists of images and at least 5 captions per image.
+The model was trained on a subset of the [COCO Image Captioning Dataset](https://www.kaggle.com/datasets/nagasai524/mini-coco2014-dataset-for-image-captioning?select=Images), which consists of images and at least 5 captions per image.
 
 ## Architecture
 The image captioning model consists of a Vision Transformer (ViT) encoder and a DistilGPT2 decoder:
