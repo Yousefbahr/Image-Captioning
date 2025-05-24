@@ -8,8 +8,8 @@ The image captioning model consists of a Vision Transformer (ViT) encoder and a 
 
 - The ViT encoder processes input images and outputs a sequence of visual embeddings representing image features.
 
-- These features are projected into the same embedding space as the decoder using a linear layer with GELU activation.
-
+- These features are first projected from the encoder's embedding space to a higher-dimensional space, then reduced back down to match the decoder's embedding dimension, using two linear layers, Dropout, and GELU activation.
+  
 - A learned [SEP] token embedding is appended to distinguish image features from text input.
 
 - The DistilGPT2 decoder then takes the concatenated embeddings (image + [SEP] + text) as input and generates captions token by token in an autoregressive manner.
