@@ -5,6 +5,19 @@ The model attained a BLEU-1 score of 0.66, indicating a high degree of unigram-l
 
 The model was trained on a subset of the [COCO Image Captioning Dataset](https://www.kaggle.com/datasets/nagasai524/mini-coco2014-dataset-for-image-captioning?select=Images), which consists of images and at least 5 captions per image.
 
+<table>
+  <tr>
+    <td><img src="Images/my_plot3.png" ></td>
+    <td><img src="Images/my_plot4.png" ></td>
+    <td><img src="Images/my_plot5.png" ></td>
+  </tr>
+  <tr>
+    <td>A white cat sitting in a bathtub in a bathroom.</td>
+     <td>A man riding skis down a snow covered slope.</td>
+     <td>A zebra grazing on green grass in a field.</td>
+  </tr>
+ </table>
+
 ## Architecture
 The image captioning model consists of a Vision Transformer (ViT) encoder and a DistilGPT2 decoder:
 
@@ -27,17 +40,4 @@ During training:
 
 - The model computes a causal language modeling loss, predicting the next word at each position in the caption.
 
-## Samples
 
-<table>
-  <tr>
-    <td><img src="Images/my_plot3.png" ></td>
-    <td><img src="Images/my_plot4.png" ></td>
-    <td><img src="Images/my_plot5.png" ></td>
-  </tr>
-  <tr>
-    <td>A white cat sitting in a bathtub in a bathroom.</td>
-     <td>A man riding skis down a snow covered slope.</td>
-     <td>A zebra grazing on green grass in a field.</td>
-  </tr>
- </table>
