@@ -1,5 +1,7 @@
 # Image-Captioning
-Combines a Vision Transformer (ViT) encoder for extracting image features with a DistilGPT2 decoder for generating captions.
+An encoder-decoder model consisting of a Vision Transformer (ViT) for extracting image features with a DistilGPT2 for generating captions.
+
+The model attained a BLEU-1 score of 0.66, indicating a high degree of unigram-level alignment. 
 
 The model was trained on a subset of the [COCO Image Captioning Dataset](https://www.kaggle.com/datasets/nagasai524/mini-coco2014-dataset-for-image-captioning?select=Images), which consists of images and at least 5 captions per image.
 
@@ -24,3 +26,9 @@ During training:
 - The ViT encoder extracts visual features, which are concatenated with the [SEP] token and caption token embeddings.
 
 - The model computes a causal language modeling loss, predicting the next word at each position in the caption.
+
+
+## Samples
+![my_plot](https://github.com/user-attachments/assets/d13d70ab-c5ec-40d8-96c9-c1a2261117a9)
+
+![my_plot3](https://github.com/user-attachments/assets/89d44a0b-8f15-4cba-b821-920f7eecfebc)
