@@ -27,8 +27,17 @@ During training:
 
 - The model computes a causal language modeling loss, predicting the next word at each position in the caption.
 
-
 ## Samples
-![my_plot](https://github.com/user-attachments/assets/d13d70ab-c5ec-40d8-96c9-c1a2261117a9)
 
-![my_plot3](https://github.com/user-attachments/assets/89d44a0b-8f15-4cba-b821-920f7eecfebc)
+<table>
+  <tr>
+    <td><img src="Images/my_plot3.png" ></td>
+    <td><img src="Images/my_plot4.png" ></td>
+    <td><img src="Images/my_plot5.png" ></td>
+  </tr>
+  <tr>
+    <td>A white cat sitting in a bathtub in a bathroom.</td>
+     <td>A man riding skis down a snow covered slope.</td>
+     <td>A zebra grazing on green grass in a field.</td>
+  </tr>
+ </table>
