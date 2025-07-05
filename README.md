@@ -30,13 +30,17 @@ The image captioning model consists of a Vision Transformer (ViT) encoder and a 
 - The DistilGPT2 decoder then takes the concatenated embeddings (image + [SEP] + text) as input and generates captions token by token in an autoregressive manner.
 
 ## Training
+A custom attention mask is implemented for the visual features and the [SEP] token.
+
+Data Parallelism is being used to increase the input batch size.
+
 During training:
 
 - Each sample includes an image and a corresponding randomly selected, tokenized caption from a set of captions.
 
 - Captions are passed as inputs and labels (for causal language modeling).
 
-- The ViT encoder extracts visual features, which are concatenated with the [SEP] token and caption token embeddings.
+- The ViT encoder extracts visual features, which are then fed into a neural network. These features are concatenated with the [SEP] token and the caption's token embeddings before being passed to the DistilGPT2 decoder.
 
 - The model computes a causal language modeling loss, predicting the next word at each position in the caption.
 
